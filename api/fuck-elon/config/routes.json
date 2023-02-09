@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fuck-elon",
+      "handler": "fuck-elon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fuck-elon",
+      "handler": "fuck-elon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fuck-elon",
+      "handler": "fuck-elon.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

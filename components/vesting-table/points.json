@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_vesting_table_points",
+  "info": {
+    "name": "points",
+    "icon": "flag-checkered"
+  },
+  "options": {},
+  "attributes": {
+    "dateTime": {
+      "type": "datetime"
+    },
+    "percentage": {
+      "type": "decimal"
+    }
+  }
+}

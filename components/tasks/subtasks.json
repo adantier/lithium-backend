@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_tasks_subtasks",
+  "info": {
+    "name": "subtasks",
+    "icon": "clipboard-check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalName": {
+      "type": "string"
+    },
+    "publicName": {
+      "type": "string"
+    },
+    "noScreenshotRequired": {
+      "type": "boolean"
+    },
+    "requiresSocial": {
+      "type": "enumeration",
+      "enum": [
+        "Twitter",
+        "Discord",
+        "Telegram"
+      ]
+    },
+    "instructions": {
+      "type": "richtext"
+    },
+    "twitterTaskType": {
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "Retweet",
+        "Follow",
+        "Like"
+      ]
+    },
+    "accountHandleOrTweetUrl": {
+      "type": "string"
+    },
+    "telegramUrl": {
+      "type": "string"
+    },
+    "discordServerId": {
+      "type": "string"
+    },
+    "discordInviteLink": {
+      "type": "string"
+    },
+    "completionMethod": {
+      "type": "enumeration",
+      "enum": [
+        "binary",
+        "oneToTenScore"
+      ]
+    }
+  }
+}

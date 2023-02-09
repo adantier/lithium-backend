@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tokens",
+  "info": {
+    "name": "tokens",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "oauth_token": {
+      "type": "string"
+    },
+    "oauth_token_secret": {
+      "type": "string"
+    },
+    "oauth_access_token": {
+      "type": "string"
+    },
+    "oauth_access_token_secret": {
+      "type": "string"
+    },
+    "discord_access_token": {
+      "type": "string"
+    },
+    "discord_refresh_token": {
+      "type": "string"
+    },
+    "discord_expires_on": {
+      "type": "datetime"
+    }
+  }
+}

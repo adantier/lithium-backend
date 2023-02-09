@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "tasks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tasks.tasks"
+    },
+    "ticker": {
+      "type": "string"
+    },
+    "pool": {
+      "via": "project",
+      "model": "pools"
+    },
+    "whitelists": {
+      "private": true,
+      "collection": "whitelist"
+    },
+    "customDiscountInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "mission-control.custom-discount-info"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "baselineAllocation": {
+      "type": "integer",
+      "default": 200
+    },
+    "isFeaturedProject": {
+      "type": "boolean"
+    },
+    "headerTopBanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "mission-control.header-top-banner"
+    },
+    "projectMedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.media"
+    },
+    "externalLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "top-links.top-links"
+    },
+    "metaDescription": {
+      "type": "richtext"
+    },
+    "competitions": {
+      "via": "project",
+      "collection": "competition"
+    },
+    "landingPageOnly": {
+      "type": "boolean"
+    },
+    "isArchived": {
+      "type": "boolean"
+    },
+    "chain": {
+      "type": "enumeration",
+      "enum": [
+        "Polygon",
+        "Ethereum",
+        "BSC",
+        "Solana",
+        "Cardano"
+      ]
+    },
+    "letItSnow": {
+      "type": "boolean"
+    },
+    "isComingSoon": {
+      "type": "boolean"
+    }
+  }
+}

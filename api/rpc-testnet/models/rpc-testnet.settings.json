@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "rpc_testnets",
+  "info": {
+    "name": "RPC_Testnet",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "enumeration",
+      "enum": [
+        "speedy_nodes_moralis_bsc_testnet",
+        "data_seed_prebsc_1_s1_binance_org",
+        "data_seed_prebsc_1_s2_binance_org",
+        "data_seed_prebsc_1_s3_binance_org",
+        "data_seed_prebsc_2_s1_binance_org",
+        "data_seed_prebsc_2_s2_binance_org",
+        "data_seed_prebsc_2_s3_binance_org",
+        "data_seed_prebsc_3_s1_binance_org",
+        "data_seed_prebsc_3_s2_binance_org",
+        "data_seed_prebsc_3_s3_binance_org"
+      ]
+    }
+  }
+}

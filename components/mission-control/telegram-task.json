@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_mission_control_telegram_tasks",
+  "info": {
+    "name": "telegramTask",
+    "icon": "carrot"
+  },
+  "options": {},
+  "attributes": {
+    "taskType": {
+      "type": "enumeration",
+      "enum": [
+        "LinkClick"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

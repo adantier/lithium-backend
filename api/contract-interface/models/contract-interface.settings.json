@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contract_interfaces",
+  "info": {
+    "name": "contractInterface",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "interface": {
+      "type": "component",
+      "repeatable": true,
+      "component": "interface.interface"
+    },
+    "poolName": {
+      "type": "string",
+      "unique": true
+    },
+    "mainnet": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

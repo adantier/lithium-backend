@@ -1,0 +1,140 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/accounts",
+      "handler": "account.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accounts/:id",
+      "handler": "account.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/username/is-available/:username",
+      "handler": "account.isUsernameAvailable",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/level/:accountId/:projectId",
+      "handler": "account.getLevelAndXpByAccountIdAndProjectId",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accounts-no-wallet/:id",
+      "handler": "account.getAccount",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/w3-account/sign-up-or-create",
+      "handler": "account.signUpOrLoginWithWallet",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/w3-account/add-wallet-to-account",
+      "handler": "account.addWalletToAccount",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ammend-account/:id",
+      "handler": "account.ammendAccount",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/delete-account/:id",
+      "handler": "account.deleteAccount",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/discord/oauth/verify",
+      "handler": "account.verifyDiscordCode",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/twitter/oauth/verify",
+      "handler": "account.verifyTwitterToken",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/twitter/oauth/request_token",
+      "handler": "account.requestTwitterToken",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/add-project-to-user/:projectId/:walletAddress",
+      "handler": "account.addProjectToUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/add-project-to-user-by-slug/:slug/:walletAddress",
+      "handler": "account.addProjectToUserBySlug",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/accounts",
+      "handler": "account.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/accounts/:id",
+      "handler": "account.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/accounts/:id",
+      "handler": "account.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

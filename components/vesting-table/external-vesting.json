@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_vesting_table_external_vestings",
+  "info": {
+    "name": "externalVesting",
+    "icon": "upload"
+  },
+  "options": {},
+  "attributes": {
+    "isExternal": {
+      "type": "boolean"
+    },
+    "externalVestingLink": {
+      "type": "string"
+    }
+  }
+}

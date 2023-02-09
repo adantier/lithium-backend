@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_preferences",
+  "info": {
+    "name": "ProjectPreferences"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "marketingPreferences": {
+      "type": "component",
+      "repeatable": false,
+      "component": "marketing.marketing-preferences"
+    },
+    "account": {
+      "model": "account"
+    },
+    "project": {
+      "model": "project"
+    }
+  }
+}

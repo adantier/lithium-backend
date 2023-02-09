@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_returned_returneds",
+  "info": {
+    "name": "returned",
+    "icon": "file-upload"
+  },
+  "options": {},
+  "attributes": {
+    "milestone": {
+      "type": "integer"
+    },
+    "escrow": {
+      "type": "integer"
+    }
+  }
+}

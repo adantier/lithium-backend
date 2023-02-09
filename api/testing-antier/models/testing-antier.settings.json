@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "testing_antiers",
+  "info": {
+    "name": "testingAntier"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hasWorked": {
+      "type": "boolean"
+    }
+  }
+}

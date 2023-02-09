@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reward_contracts_chain_settings",
+  "info": {
+    "name": "Reward_Contracts_Chain_Settings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Address_testnet": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "ABI": {
+      "type": "json"
+    },
+    "chainId": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vesting-table.chain-id"
+    }
+  }
+}

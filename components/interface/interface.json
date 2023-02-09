@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_interface_interfaces",
+  "info": {
+    "name": "interface",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "filedName": {
+      "type": "string"
+    }
+  }
+}

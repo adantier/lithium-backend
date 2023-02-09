@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_top_links_top_links",
+  "info": {
+    "name": "topLinks",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+      "type": "string"
+    },
+    "whitepaper": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    }
+  }
+}

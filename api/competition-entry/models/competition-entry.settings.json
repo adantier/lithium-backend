@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "competition_entries",
+  "info": {
+    "name": "CompetitionEntry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "competition": {
+      "model": "competition"
+    },
+    "account": {
+      "model": "account"
+    }
+  }
+}

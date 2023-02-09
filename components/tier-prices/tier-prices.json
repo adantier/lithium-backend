@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_tier_prices_tier_prices",
+  "info": {
+    "name": "tierPrices",
+    "icon": "grip-vertical",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "starter": {
+      "type": "biginteger",
+      "required": true
+    },
+    "investor": {
+      "type": "biginteger",
+      "required": true
+    },
+    "strategist": {
+      "type": "biginteger"
+    },
+    "evangelist": {
+      "type": "biginteger"
+    }
+  }
+}

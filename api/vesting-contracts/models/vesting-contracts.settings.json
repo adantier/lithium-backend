@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vesting_contracts",
+  "info": {
+    "name": "Vesting_Contracts_Chain_Settings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Address_Testnet": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "ABI": {
+      "type": "json"
+    },
+    "chainId": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vesting-table.chain-id"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discounted_allocations",
+  "info": {
+    "name": "Discounted Allocation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "walletAddress": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "project": {
+      "model": "project"
+    },
+    "accountId": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sontracts-for-deployments",
+      "handler": "sontracts-for-deployment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sontracts-for-deployments/count",
+      "handler": "sontracts-for-deployment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sontracts-for-deployments/:id",
+      "handler": "sontracts-for-deployment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sontracts-for-deployments",
+      "handler": "sontracts-for-deployment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sontracts-for-deployments/:id",
+      "handler": "sontracts-for-deployment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sontracts-for-deployments/:id",
+      "handler": "sontracts-for-deployment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

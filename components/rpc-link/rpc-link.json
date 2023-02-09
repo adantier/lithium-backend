@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_rpc_link_rpc_links",
+  "info": {
+    "name": "rpc_link",
+    "icon": "vr-cardboard"
+  },
+  "options": {},
+  "attributes": {
+    "rpc": {
+      "type": "string",
+      "required": true,
+      "default": "https://data-seed-prebsc-1-s1.binance.org:8545/"
+    }
+  }
+}

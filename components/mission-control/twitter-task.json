@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_mission_control_twitter_tasks",
+  "info": {
+    "name": "twitterTask",
+    "icon": "users",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "taskType": {
+      "type": "enumeration",
+      "enum": [
+        "Retweet",
+        "Follow",
+        "Like"
+      ]
+    },
+    "accountHandleOrTweetUrl": {
+      "type": "string"
+    }
+  }
+}

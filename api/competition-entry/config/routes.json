@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/competition-entries",
+      "handler": "competition-entry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/competition-entries/count",
+      "handler": "competition-entry.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/competition-entries/:id",
+      "handler": "competition-entry.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/competition-entries",
+      "handler": "competition-entry.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/competition-entries/:id",
+      "handler": "competition-entry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/competition-entries/:id",
+      "handler": "competition-entry.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

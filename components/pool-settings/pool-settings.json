@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_pool_settings_pool_settings",
+  "info": {
+    "name": "PoolSettings",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "softCap": {
+      "type": "biginteger"
+    },
+    "hardCap": {
+      "type": "biginteger"
+    },
+    "globalMaxAllocation": {
+      "type": "integer"
+    },
+    "poolTaxRate": {
+      "type": "integer"
+    },
+    "requiresKYC": {
+      "type": "boolean"
+    },
+    "whitelistTaxRate": {
+      "type": "integer"
+    }
+  }
+}

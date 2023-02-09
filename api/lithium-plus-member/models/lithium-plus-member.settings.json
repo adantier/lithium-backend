@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lithium_plus_members",
+  "info": {
+    "name": "LithiumPlusMember",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "walletAddress": {
+      "type": "uid",
+      "required": true
+    },
+    "account": {
+      "model": "account"
+    },
+    "tier": {
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "Backer",
+        "Starter",
+        "Investor",
+        "Strategist",
+        "Venturist",
+        "Evangelist",
+        "Evangelist_Pro"
+      ]
+    },
+    "lockDays": {
+      "type": "integer"
+    },
+    "datetimeOfUnlock": {
+      "type": "datetime"
+    }
+  }
+}

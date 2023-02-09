@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/competitions",
+      "handler": "competition.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/competitions/count",
+      "handler": "competition.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/competitions/entries-by-user/:competitionId/:walletAddress",
+      "handler": "competition.entriesByUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/competitions/:id",
+      "handler": "competition.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/competitions",
+      "handler": "competition.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/competitions/:id",
+      "handler": "competition.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/competitions/:id",
+      "handler": "competition.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

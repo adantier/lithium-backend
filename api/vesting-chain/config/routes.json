@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vesting-chain",
+      "handler": "vesting-chain.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vesting-chain",
+      "handler": "vesting-chain.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vesting-chain",
+      "handler": "vesting-chain.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

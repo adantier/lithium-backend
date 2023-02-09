@@ -1,0 +1,35 @@
+apiVersion: skaffold/v2beta20
+kind: Config
+metadata:
+  name: lithium-cms-backend
+profiles:
+  - name: full-cicd
+    activation:
+      - kubeContext: prod
+      - env: ENV_KIND=prod
+    build:
+      local:
+        useDockerCLI: true
+      artifacts:
+      - image: 776618208970.dkr.ecr.us-east-1.amazonaws.com/lithium-cms-backend
+        docker:
+          dockerfile: Dockerfile
+          buildArgs:
+            DATABASE_URL: "{{ .LITH_DATABASE_URL }}"
+            HTTP_PROVIDER: "{{ .LITH_HTTP_PROVIDER }}"
+            PRIVATE_KEY: "{{ .LITH_PRIVATE_KEY }}"
+            ADDRESS_FROM: "{{ .LITH_ADDRESS_FROM }}"
+            STRAPI_WORK_URL_FOR_QUERY_WEB3: "{{ .LITH_STRAPI_WORK_URL_FOR_QUERY_WEB3 }}"
+        hooks:
+          before:
+            - command:
+              - sh
+              - -c
+              - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 776618208970.dkr.ecr.us-east-1.amazonaws.com
+            - command: ["sh", "-c", "[ -d 'adoria-infra' ] || git clone --branch main git@github.com:adoriasoft/adoria-infra.git"]
+      tagPolicy:
+        gitCommit: {}
+    deploy:
+      kustomize:
+        paths:
+        - adoria-infra/kustomize/lithium-cms-backend/base

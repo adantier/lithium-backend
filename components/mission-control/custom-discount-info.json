@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_mission_control_custom_discount_infos",
+  "info": {
+    "name": "customDiscountInfo",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "customTitle": {
+      "type": "string"
+    },
+    "customDescription": {
+      "type": "string"
+    },
+    "customPrice": {
+      "type": "string"
+    }
+  }
+}

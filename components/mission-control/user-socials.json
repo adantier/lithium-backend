@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_mission_control_user_socials",
+  "info": {
+    "name": "userSocials",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "twitterHandle": {
+      "type": "string",
+      "private": true
+    },
+    "telegramHandle": {
+      "type": "string",
+      "private": true
+    },
+    "discordHandle": {
+      "type": "string",
+      "private": true
+    }
+  }
+}

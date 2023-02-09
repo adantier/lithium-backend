@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/discounted-allocations",
+      "handler": "discounted-allocation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/discounted-allocations/count",
+      "handler": "discounted-allocation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/discounted-allocations/by-project-and-user/:slug/:accountId",
+      "handler": "discounted-allocation.byProjectAndUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/discounted-allocations/:id",
+      "handler": "discounted-allocation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/discounted-allocations",
+      "handler": "discounted-allocation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/discounted-allocations/:id",
+      "handler": "discounted-allocation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/discounted-allocations/:id",
+      "handler": "discounted-allocation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

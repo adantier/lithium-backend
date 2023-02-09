@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/task-submissions",
+      "handler": "task-submission.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/task-submissions/count",
+      "handler": "task-submission.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/task-submissions/:id",
+      "handler": "task-submission.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/task-submissions/by-user-and-project/:project_id/:accountId",
+      "handler": "task-submission.byProjectAndUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/task-submissions",
+      "handler": "task-submission.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/task-submissions/:id",
+      "handler": "task-submission.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/task-submissions/:id",
+      "handler": "task-submission.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testnet_addresses",
+  "info": {
+    "name": "TestnetAddresses"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    }
+  }
+}

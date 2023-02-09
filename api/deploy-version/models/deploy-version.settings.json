@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "deploy_versions",
+  "info": {
+    "name": "Deploy_version",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "version": {
+      "type": "enumeration",
+      "enum": [
+        "USDC_instantclaim",
+        "USDC_tokenFree"
+      ]
+    }
+  }
+}

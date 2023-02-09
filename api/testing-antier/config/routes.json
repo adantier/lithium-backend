@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/testing-antier",
+      "handler": "testing-antier.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/testing-antier",
+      "handler": "testing-antier.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/testing-antier",
+      "handler": "testing-antier.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

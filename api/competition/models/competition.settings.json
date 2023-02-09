@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "competitions",
+  "info": {
+    "name": "Competition",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "numberOfWinners": {
+      "type": "integer"
+    },
+    "prizePool": {
+      "type": "integer"
+    },
+    "prizeTicker": {
+      "type": "string"
+    },
+    "expiryDate": {
+      "type": "datetime"
+    },
+    "winnersCsv": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "winnersJSON": {
+      "type": "json"
+    },
+    "project": {
+      "via": "competitions",
+      "model": "project"
+    },
+    "rewardsDistributed": {
+      "type": "boolean"
+    }
+  }
+}

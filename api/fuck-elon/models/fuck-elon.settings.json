@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "fuck_elons",
+  "info": {
+    "name": "fuckElon",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bypassTwitterApi": {
+      "type": "boolean"
+    }
+  }
+}

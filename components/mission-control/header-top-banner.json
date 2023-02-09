@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_mission_control_header_top_banners",
+  "info": {
+    "name": "headerTopBanner",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "lightMode": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "darkMode": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

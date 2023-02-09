@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_mission_control_project_rewards",
+  "info": {
+    "name": "projectReward",
+    "icon": "money-bill-wave"
+  },
+  "options": {},
+  "attributes": {
+    "isUSDC": {
+      "type": "boolean"
+    },
+    "amount": {
+      "type": "integer"
+    }
+  }
+}

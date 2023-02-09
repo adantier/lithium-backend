@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_contract_admins",
+  "info": {
+    "name": "admins",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "abi": {
+      "type": "json",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

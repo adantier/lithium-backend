@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/get-sale-logs",
+      "handler": "get-sale-logs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/get-sale-logs",
+      "handler": "get-sale-logs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/get-sale-logs",
+      "handler": "get-sale-logs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

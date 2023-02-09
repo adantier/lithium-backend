@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_contract_contracts",
+  "info": {
+    "name": "contract",
+    "icon": "file-invoice"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "abi": {
+      "type": "json"
+    }
+  }
+}

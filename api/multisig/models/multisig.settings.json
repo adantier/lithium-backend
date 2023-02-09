@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "multisigs",
+  "info": {
+    "name": "Multisig"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "chainId": {
+      "type": "integer"
+    },
+    "Address": {
+      "type": "string"
+    }
+  }
+}

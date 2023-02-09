@@ -1,0 +1,116 @@
+{
+  "collectionName": "components_tasks_tasks",
+  "info": {
+    "name": "tasks",
+    "icon": "check-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalName": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "publicName": {
+      "type": "string"
+    },
+    "rewardAmount": {
+      "type": "decimal"
+    },
+    "isExtraAllocation": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "completionMethod": {
+      "type": "enumeration",
+      "enum": [
+        "binary",
+        "oneToTenScore"
+      ],
+      "required": true
+    },
+    "isUSDCProjectReward": {
+      "type": "boolean"
+    },
+    "isNativeTokenProjectReward": {
+      "type": "boolean"
+    },
+    "ticker": {
+      "type": "string",
+      "required": false
+    },
+    "instructions": {
+      "type": "richtext"
+    },
+    "requiresSocial": {
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "Twitter",
+        "Discord",
+        "Telegram"
+      ]
+    },
+    "twitterTask": {
+      "type": "component",
+      "repeatable": false,
+      "component": "mission-control.twitter-task"
+    },
+    "telegramTask": {
+      "type": "component",
+      "repeatable": false,
+      "component": "mission-control.telegram-task"
+    },
+    "noScreenshotRequired": {
+      "type": "boolean"
+    },
+    "discordTask": {
+      "type": "component",
+      "repeatable": false,
+      "component": "mission-control.discord-task"
+    },
+    "expiresOn": {
+      "type": "datetime"
+    },
+    "subtasks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tasks.subtasks"
+    },
+    "competition": {
+      "model": "competition"
+    },
+    "availableFrom": {
+      "type": "datetime"
+    },
+    "thirdPartyProjectName": {
+      "type": "string"
+    },
+    "thirdPartyProjectIcon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isEmailTask": {
+      "type": "boolean"
+    },
+    "xpReward": {
+      "type": "integer",
+      "min": 50
+    },
+    "requiredLevel": {
+      "type": "integer",
+      "default": 0,
+      "required": false
+    }
+  }
+}

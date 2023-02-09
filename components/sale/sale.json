@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sale_sales",
+  "info": {
+    "name": "Sale",
+    "icon": "comment-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "biginteger"
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "cap": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cap.cap"
+    }
+  }
+}

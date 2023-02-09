@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "task_submissions",
+  "info": {
+    "name": "TaskSubmission",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "private": true,
+      "model": "project"
+    },
+    "taskId": {
+      "type": "integer"
+    },
+    "hasCompleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "scoreOutOfTen": {
+      "type": "integer",
+      "min": 0,
+      "max": 10
+    },
+    "proofImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "userSocials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "mission-control.user-socials"
+    },
+    "privateName": {
+      "type": "string"
+    },
+    "publicName": {
+      "type": "string"
+    },
+    "instructions": {
+      "type": "richtext"
+    },
+    "completionMethod": {
+      "type": "enumeration",
+      "enum": [
+        "binary",
+        "oneToTenScore"
+      ]
+    },
+    "isSubtask": {
+      "type": "boolean",
+      "default": false
+    },
+    "subtaskId": {
+      "type": "integer"
+    },
+    "accountIdOfUser": {
+      "type": "integer"
+    },
+    "walletAddressOfUser": {
+      "type": "string"
+    }
+  }
+}

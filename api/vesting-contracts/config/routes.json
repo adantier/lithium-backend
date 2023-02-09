@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vesting-contracts",
+      "handler": "vesting-contracts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vesting-contracts/count",
+      "handler": "vesting-contracts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vesting-contracts/:id",
+      "handler": "vesting-contracts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vesting-contracts",
+      "handler": "vesting-contracts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vesting-contracts/:id",
+      "handler": "vesting-contracts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vesting-contracts/:id",
+      "handler": "vesting-contracts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

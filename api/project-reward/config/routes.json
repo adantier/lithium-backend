@@ -1,0 +1,62 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/project-rewards",
+      "handler": "project-reward.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/project-rewards/count",
+      "handler": "project-reward.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/project-rewards/by-project/:id/:walletAddress",
+      "handler": "project-reward.getRewardsForProject",
+      "config": {
+        "policies": [
+          "has-token-as-query-param"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/project-rewards/:id",
+      "handler": "project-reward.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/project-rewards",
+      "handler": "project-reward.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/project-rewards/:id",
+      "handler": "project-reward.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/project-rewards/:id",
+      "handler": "project-reward.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/projects",
+      "handler": "project.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/count",
+      "handler": "project.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/leaderboard/:slug",
+      "handler": "project.getLeaderboard",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/projects/users/add",
+      "handler": "project.addUserToProject",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/projects/users/remove",
+      "handler": "project.removeUserFromProject",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/all",
+      "handler": "project.summary",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/by-slug/landing/:slug",
+      "handler": "project.getProjectBySlugLanding",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/by-slug/:slug",
+      "handler": "project.getProjectBySlug",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/featured-project",
+      "handler": "project.featuredProject",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/:id",
+      "handler": "project.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/by-user/landing/:walletAddress",
+      "handler": "project.byUserLanding",
+      "config": {
+        "policies": [
+          "has-token"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/by-user/:walletAddress",
+      "handler": "project.byUser",
+      "config": {
+        "policies": [
+          "has-token"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/by-user-homepage/:accountId",
+      "handler": "project.byUserHomepage",
+      "config": {
+        "policies": [
+          "has-token"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/tasks-by-user-homepage/:accountId",
+      "handler": "project.tasksByUserHomepage",
+      "config": {
+        "policies": [
+          "has-token"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/tasks-for-homepage/guest",
+      "handler": "project.tasksForGuestHomepage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects/projects-for-homepage/guest",
+      "handler": "project.projectsGuestHomepage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/projects",
+      "handler": "project.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/projects/:id",
+      "handler": "project.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/projects/:id",
+      "handler": "project.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

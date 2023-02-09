@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-project-xps",
+      "handler": "user-project-xp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-project-xps/count",
+      "handler": "user-project-xp.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-project-xps/:id",
+      "handler": "user-project-xp.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-project-xps",
+      "handler": "user-project-xp.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-project-xps/:id",
+      "handler": "user-project-xp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-project-xps/:id",
+      "handler": "user-project-xp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

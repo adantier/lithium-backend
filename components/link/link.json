@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_link_links",
+  "info": {
+    "name": "link",
+    "icon": "share-square"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/testnet-addresses",
+      "handler": "testnet-addresses.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/testnet-addresses/count",
+      "handler": "testnet-addresses.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/testnet-addresses/:id",
+      "handler": "testnet-addresses.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/testnet-addresses",
+      "handler": "testnet-addresses.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/testnet-addresses/:id",
+      "handler": "testnet-addresses.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/testnet-addresses/:id",
+      "handler": "testnet-addresses.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

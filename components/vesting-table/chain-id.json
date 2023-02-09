@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_vesting_table_chain_ids",
+  "info": {
+    "name": "chainId",
+    "icon": "code-branch"
+  },
+  "options": {},
+  "attributes": {
+    "mainnet": {
+      "type": "integer"
+    },
+    "testnet": {
+      "type": "integer"
+    }
+  }
+}

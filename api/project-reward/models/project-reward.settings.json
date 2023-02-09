@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_rewards",
+  "info": {
+    "name": "ProjectReward",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "recipientCSV": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "chainId": {
+      "type": "enumeration",
+      "enum": [
+        "bscTestnet_97",
+        "bscMainnet_56",
+        "polygonMainnet_137",
+        "polygonTestnet_80001",
+        "etherumMainnet_1",
+        "etherumRinkebyTestnet_4",
+        "solana_999999"
+      ]
+    },
+    "hasApprovedGnosis": {
+      "type": "boolean"
+    },
+    "hasDeployed": {
+      "type": "boolean"
+    },
+    "tokenAddress": {
+      "type": "string"
+    },
+    "fromDetail": {
+      "type": "string"
+    },
+    "tokenDecimals": {
+      "default": 18,
+      "type": "integer"
+    },
+    "project": {
+      "model": "project"
+    }
+  }
+}

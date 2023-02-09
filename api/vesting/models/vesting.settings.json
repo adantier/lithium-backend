@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vestings",
+  "info": {
+    "name": "Vesting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "pool": {
+      "model": "pools"
+    },
+    "tokenAddress": {
+      "type": "string"
+    },
+    "points": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vesting-table.points"
+    },
+    "vestingContractAddress": {
+      "type": "string"
+    },
+    "chainId": {
+      "type": "enumeration",
+      "enum": [
+        "bscTestnet_97",
+        "bscMainnet_56",
+        "polygonMainnet_137",
+        "polygonTestnet_80001",
+        "etherumMainnet_1",
+        "etherumRinkebyTestnet_4",
+        "solana_999999"
+      ]
+    },
+    "externalVesting": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vesting-table.external-vesting"
+    },
+    "hasApprovedGnosis": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasDeployed": {
+      "type": "boolean",
+      "default": false
+    },
+    "project": {
+      "model": "project"
+    }
+  }
+}

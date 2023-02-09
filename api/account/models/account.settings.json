@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounts",
+  "info": {
+    "name": "Account",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "WalletAddress": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Email": {
+      "type": "string",
+      "unique": true
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "MarketingPreferences": {
+      "type": "component",
+      "repeatable": false,
+      "component": "marketing.marketing-preferences"
+    },
+    "twitterHandle": {
+      "type": "string",
+      "unique": true
+    },
+    "discordHandle": {
+      "type": "string"
+    },
+    "telegramHandle": {
+      "type": "string"
+    },
+    "referredFromSlug": {
+      "type": "string"
+    },
+    "token": {
+      "model": "tokens"
+    },
+    "projects": {
+      "collection": "project"
+    },
+    "discordId": {
+      "type": "string",
+      "private": true,
+      "required": false,
+      "unique": true
+    },
+    "discordHashNumber": {
+      "type": "integer"
+    },
+    "profilePictureUrl": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string",
+      "unique": false
+    }
+  }
+}

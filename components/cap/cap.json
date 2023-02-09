@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_cap_caps",
+  "info": {
+    "name": "Cap",
+    "icon": "hand-holding-usd",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "current": {
+      "type": "biginteger",
+      "default": "1000"
+      }
+  }
+}

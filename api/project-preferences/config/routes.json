@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/project-preferences",
+      "handler": "project-preferences.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/project-preferences/count",
+      "handler": "project-preferences.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/project-preferences/:id",
+      "handler": "project-preferences.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/project-preferences",
+      "handler": "project-preferences.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/signup-to-promotional-material/:projectId/:accountId",
+      "handler": "project-preferences.signUpToPromotionalMaterial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ammend-to-promotional-material/:projectId/:accountId",
+      "handler": "project-preferences.ammendPromotionalMaterial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fetch-promotional-settings/:projectId/:accountId",
+      "handler": "project-preferences.fetchPromotionalSettings",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/project-preferences/:id",
+      "handler": "project-preferences.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/project-preferences/:id",
+      "handler": "project-preferences.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

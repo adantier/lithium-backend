@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/multisigs",
+      "handler": "multisig.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/multisigs/count",
+      "handler": "multisig.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/multisigs/:id",
+      "handler": "multisig.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/multisigs",
+      "handler": "multisig.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/multisigs/:id",
+      "handler": "multisig.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/multisigs/:id",
+      "handler": "multisig.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

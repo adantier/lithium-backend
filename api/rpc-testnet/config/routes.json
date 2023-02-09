@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rpc-testnet",
+      "handler": "rpc-testnet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rpc-testnet",
+      "handler": "rpc-testnet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rpc-testnet",
+      "handler": "rpc-testnet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

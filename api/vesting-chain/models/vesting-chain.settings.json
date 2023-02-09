@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "vesting_chains",
+  "info": {
+    "name": "Vesting_chain",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Chain": {
+      "type": "enumeration",
+      "enum": [
+        "BSC",
+        "Polygon"
+      ]
+    }
+  }
+}

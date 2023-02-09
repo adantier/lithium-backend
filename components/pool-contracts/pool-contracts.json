@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_pool_contracts_pool_contracts",
+  "info": {
+    "name": "poolContracts",
+    "icon": "scroll",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "staking": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contract.staking"
+    },
+    "master": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contract.master",
+      "required": true
+    },
+    "token": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contract.token"
+    },
+    "admins": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contract.admins"
+    }
+  }
+}

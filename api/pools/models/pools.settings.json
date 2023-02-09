@@ -1,0 +1,147 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pools",
+  "info": {
+    "name": "Pools",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "poolAddress": {
+      "type": "string",
+      "required": false
+    },
+    "ticker": {
+      "type": "string",
+      "required": true
+    },
+    "decimals": {
+      "type": "biginteger",
+      "required": true,
+      "default": "6"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Incoming",
+        "Reviewing",
+        "Deny",
+        "Scheduled",
+        "Completed"
+      ],
+      "required": true
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.about"
+    },
+    "team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "team.team"
+    },
+    "privateSale": {
+      "type": "component",
+      "repeatable": false,
+      "component": "private-sale.private-sale",
+      "required": true
+    },
+    "isDeployed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "chainID": {
+      "type": "enumeration",
+      "enum": [
+        "Binance_Smart_Chain_Mainnet_56",
+        "Binance_Smart_Chain_Testnet_97",
+        "Polygon_Mainnet_137",
+        "Polygon_Testnet_80001"
+      ]
+    },
+    "listingType": {
+      "type": "enumeration",
+      "enum": [
+        "Seed",
+        "Private",
+        "Public"
+      ]
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.media"
+    },
+    "topLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "top-links.top-links"
+    },
+    "isFeaturedProject": {
+      "type": "boolean",
+      "default": false
+    },
+    "vestingTableRow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vesting-table.vesting-table-row"
+    },
+    "claimLocation": {
+      "type": "richtext"
+    },
+    "crossChainLink": {
+      "type": "enumeration",
+      "enum": [
+        "Ethereum",
+        "Solana",
+        "BSC",
+        "Cardano",
+        "AVAX"
+      ]
+    },
+    "athSinceIDO": {
+      "type": "integer"
+    },
+    "tgePrice": {
+      "type": "float"
+    },
+    "PoolSettings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pool-settings.pool-settings"
+    },
+    "isTBC": {
+      "type": "boolean"
+    },
+    "whitelists": {
+      "collection": "whitelist"
+    },
+    "project": {
+      "via": "pool",
+      "model": "project"
+    },
+    "updateWhitelist": {
+      "type": "boolean",
+      "default": false
+    },
+    "isPriceTBC": {
+      "type": "boolean"
+    },
+    "nftRaise": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pool-settings.nft-raise"
+    }
+  }
+}

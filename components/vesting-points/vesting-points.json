@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_vesting_points_vesting_points",
+  "info": {
+    "name": "vestingPoints",
+    "icon": "clipboard-list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "timePoint": {
+      "type": "datetime",
+      "required": true
+    },
+    "percent": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "max": 100,
+      "default": 0
+    }
+  }
+}

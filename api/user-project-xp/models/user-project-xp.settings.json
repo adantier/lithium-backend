@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_project_xps",
+  "info": {
+    "name": "userProjectXP",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "account": {
+      "model": "account"
+    },
+    "project": {
+      "model": "project"
+    },
+    "XP": {
+      "type": "integer"
+    },
+    "task_submission": {
+      "model": "task-submission"
+    }
+  }
+}

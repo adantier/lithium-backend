@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reward-contracts-chain-settings",
+      "handler": "reward-contracts-chain-settings.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reward-contracts-chain-settings/count",
+      "handler": "reward-contracts-chain-settings.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reward-contracts-chain-settings/:id",
+      "handler": "reward-contracts-chain-settings.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reward-contracts-chain-settings",
+      "handler": "reward-contracts-chain-settings.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reward-contracts-chain-settings/:id",
+      "handler": "reward-contracts-chain-settings.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reward-contracts-chain-settings/:id",
+      "handler": "reward-contracts-chain-settings.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

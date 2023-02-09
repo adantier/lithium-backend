@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_create_token_create_tokens",
+  "info": {
+    "name": "CreateToken",
+    "icon": "chess-queen",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "createTokenFromSol": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

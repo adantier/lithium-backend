@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lithium-plus-members",
+      "handler": "lithium-plus-member.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lithium-plus-members/count",
+      "handler": "lithium-plus-member.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lithium-plus-members/:id",
+      "handler": "lithium-plus-member.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lithium-plus-members",
+      "handler": "lithium-plus-member.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lithium-plus-members/by-wallet-address/:walletAddress",
+      "handler": "lithium-plus-member.updateByWalletAddress",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lithium-plus-members/:id",
+      "handler": "lithium-plus-member.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lithium-plus-members/:id",
+      "handler": "lithium-plus-member.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

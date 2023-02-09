@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_vesting_table_vesting_table_rows",
+  "info": {
+    "name": "vestingTableRow",
+    "icon": "info-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "percent": {
+      "type": "decimal"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

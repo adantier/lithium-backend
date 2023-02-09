@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whitelists",
+  "info": {
+    "name": "Whitelist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "whitelistCsv": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "allocationsByAddressJSON": {
+      "type": "json"
+    },
+    "hasMissionControlAddedAllocations": {
+      "type": "boolean",
+      "default": false
+    },
+    "generatedJSONWithMissionControlAllocations": {
+      "type": "json"
+    },
+    "isMainnet": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "baseAllocation": {
+      "default": 50,
+      "type": "integer"
+    },
+    "isAutoEnroll": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

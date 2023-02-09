@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_escrow_milestones_escrow_milestones",
+  "info": {
+    "name": "escrowMilestones",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "milestone": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "max": 100
+    },
+    "escrowReturn": {
+      "type": "integer",
+      "max": 100,
+      "required": true,
+      "default": 0,
+      "min": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blacklist_blacklists",
+  "info": {
+    "name": "blacklist",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contract-interfaces",
+      "handler": "contract-interface.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contract-interfaces/count",
+      "handler": "contract-interface.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contract-interfaces/:id",
+      "handler": "contract-interface.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contract-interfaces",
+      "handler": "contract-interface.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contract-interfaces/:id",
+      "handler": "contract-interface.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contract-interfaces/:id",
+      "handler": "contract-interface.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

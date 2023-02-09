@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/whitelists",
+      "handler": "whitelist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whitelists/count",
+      "handler": "whitelist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whitelists/:id",
+      "handler": "whitelist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/whitelists",
+      "handler": "whitelist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/whitelists/:id",
+      "handler": "whitelist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/whitelists/:id",
+      "handler": "whitelist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

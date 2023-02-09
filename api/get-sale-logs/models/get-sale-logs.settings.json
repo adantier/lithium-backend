@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "get_sale_logs",
+  "info": {
+    "name": "getSaleLogs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AddressSale": {
+      "type": "string",
+      "required": true
+    },
+    "AddressMasterContract": {
+      "type": "string",
+      "required": true
+    },
+    "DecimalsToken": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
+    },
+    "Mainnet": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "GetResult": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_pool_settings_nft_raises",
+  "info": {
+    "name": "nftRaise",
+    "icon": "donate"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rarity": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}
