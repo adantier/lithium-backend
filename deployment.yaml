@@ -1,0 +1,62 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: lithium-backend
+  labels:
+    app: lithium-backend
+    namespace: rooba
+spec:
+  replicas: 1      # No. of Pod
+  selector:
+    matchLabels:
+      app: lithium-backend
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: lithium-backend
+    spec:
+      containers:
+      - name: lithium-backend
+        envFrom:
+        - configMapRef:
+           name: lithium-backend         ### Name of config
+        image: 338217148881.dkr.ecr.us-east-2.amazonaws.com/lithium-backend:latest
+        ports:
+        - containerPort: 1337
+        readinessProbe:
+          httpGet:
+             path: /  ####Health check
+             port: 1337           #### port
+          initialDelaySeconds: 60
+          periodSeconds: 90
+        livenessProbe:
+            httpGet:
+             path: /health    ####Health check
+             port: 1337            #### port
+            initialDelaySeconds: 60
+            periodSeconds: 90
+      restartPolicy: Always
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: lithium-backend
+  labels:
+    app: lithium-backend
+    namespace: stage-lithium
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: '/'
+spec:
+  type: NodePort
+  ports:
+    - name: "tcp"
+      port: 1337
+  selector:
+    app: lithium-backend
