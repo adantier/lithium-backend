@@ -51,3 +51,4 @@ COPY ./custom_modules ./node_modules
 RUN yarn build clear
 
 ENTRYPOINT ["/bin/sh", "-c" , "mkdir -p /usr/src/app/public/uploads && yarn start"]
+#test
